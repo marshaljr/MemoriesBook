@@ -6,7 +6,7 @@ const Posts = () => {
   console.log(posts);
   return (
     <div>
-      <h2>Posts</h2>
+      <h2>New Posts</h2>
       <Post />
       <Post />
     </div>
