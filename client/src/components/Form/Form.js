@@ -29,7 +29,7 @@ const Form = () => {
           flexWrap: "wrap",
           justifyContent: "center",
         }}>
-        <Typography variant="h6">Creating a Memory</Typography>
+        <Typography variant="h6">Create a Memory</Typography>
         <TextField
           name="creator"
           variant="outlined"
