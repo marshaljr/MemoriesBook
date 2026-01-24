@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { TextField, Button, Typography, Paper } from "@mui/material";
 import { Box } from "@mui/material";
+import { useDispatch } from "react-redux";
+import { createPost } from "../../actions/posts";
 
 const Form = () => {
   const [postData, setPostData] = useState({
@@ -10,7 +12,11 @@ const Form = () => {
     tags: "",
     selectedFile: "",
   });
-  const handleSubmit = () => {};
+  const dispatch = useDispatch();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(createPost(postData));
+  };
   const handleFileChange = () => {};
   const clear = () => {};
 
